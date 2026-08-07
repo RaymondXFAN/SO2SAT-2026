@@ -1,0 +1,57 @@
+nohup: ignoring input
+============================================================
+★ So2Sat LCZ42 训练 — 模式: s1_only
+  对比实验: 只用S1 SAR数据（单模态baseline）
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/s1_only_seed456
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 256
+  类别数: 17
+  训练轮数: 30
+  随机种子: 456
+  数据模式: 完整数据集(h5)
+  模型参数: 1.08M
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/training.h5, 352366 samples
+  ★ h5数据加载: train≈320K, val≈82K, test≈82K
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/validation.h5, 24119 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/validation.h5, 24119 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/validation.h5, 24119 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/validation.h5, 24119 samples  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/validation.h5, 24119 samples
+
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/testing.h5, 24188 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/testing.h5, 24188 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/testing.h5, 24188 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/testing.h5, 24188 samples
+  ★ So2SatDatasetH5: opened /root/autodl-tmp/so2sat_exp/data/raw/testing.h5, 24188 samples
+  Epoch   1/30 | loss=1.6228 | val OA=33.88% AA=20.05% Kappa=26.7% F1=19.00% | test OA=33.24% | 1.2min
+  Epoch   2/30 | loss=1.4274 | val OA=28.95% AA=16.60% Kappa=21.2% F1=15.61% | test OA=28.65% | 2.4min
+  Epoch   3/30 | loss=1.3014 | val OA=20.30% AA=12.78% Kappa=12.4% F1=10.20% | test OA=21.20% | 3.6min
+  Epoch   4/30 | loss=1.2305 | val OA=36.06% AA=22.75% Kappa=29.2% F1=19.85% | test OA=37.89% | 4.8min
+  Epoch   5/30 | loss=1.1853 | val OA=27.26% AA=16.57% Kappa=19.3% F1=12.14% | test OA=27.58% | 5.9min
+  Epoch   6/30 | loss=1.1476 | val OA=17.82% AA=9.77% Kappa=8.0% F1=6.88% | test OA=17.05% | 7.1min
+  Epoch   7/30 | loss=1.1121 | val OA=24.94% AA=15.78% Kappa=16.9% F1=12.42% | test OA=26.81% | 8.3min
+  Epoch   8/30 | loss=1.0741 | val OA=24.15% AA=15.14% Kappa=15.8% F1=13.32% | test OA=25.10% | 9.6min
+  Epoch   9/30 | loss=1.0304 | val OA=18.17% AA=10.53% Kappa=8.5% F1=7.67% | test OA=19.34% | 10.9min
+  Epoch  10/30 | loss=0.9964 | val OA=16.85% AA=9.25% Kappa=6.9% F1=6.11% | test OA=16.40% | 12.0min
+  Epoch  11/30 | loss=0.9633 | val OA=15.27% AA=8.32% Kappa=5.2% F1=5.83% | test OA=14.35% | 13.1min
+  Epoch  12/30 | loss=0.9301 | val OA=21.33% AA=14.07% Kappa=12.8% F1=11.84% | test OA=22.17% | 14.2min
+
+★ 早停触发！最佳 val OA = 36.06%
+
+============================================================
+★ 最终结果 (s1_only mode, best model on test set)
+  OA  = 37.89%
+  AA  = 24.32%
+  Kappa = 31.2%
+  F1  = 21.18%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/s1_only_seed456/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/s1_only_seed456/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/s1_only_seed456/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/s1_only_seed456/confusion_matrix.csv
+
+✅ 训练完成！模式=s1_only，总耗时 14.3 分钟
+  ⚠️ 下载结果后请关机停计费！

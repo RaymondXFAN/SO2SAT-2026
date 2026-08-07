@@ -1,0 +1,415 @@
+nohup: ignoring input
+============================================================
+★ Phase 6 实验开始 — STMN独立第3纹理分支 + 3-分支Ada-MBA
+★ 预计总耗时: 3-4小时
+★ 开始时间: Mon Aug  3 08:30:30 CST 2026
+============================================================
+
+── ★ 开始训练: full ──
+── 开始时间: Mon Aug  3 08:30:30 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: full
+  完整模型: S2(光谱)+S1(SAR)+STMN(纹理) → LN → 3-分支Ada-MBA
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/full
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 5.34M
+  Epoch   1/50 | loss=1.3729 | val OA=44.54% AA=44.07% Kappa=41.0% F1=43.36% gates=0.152 | test OA=45.02% | 0.9min
+  Epoch   2/50 | loss=0.9810 | val OA=45.86% AA=45.45% Kappa=42.5% F1=44.10% gates=0.130 | test OA=45.38% | 1.9min
+  Epoch   3/50 | loss=0.8338 | val OA=39.76% AA=38.80% Kappa=35.9% F1=37.91% gates=0.085 | test OA=38.46% | 2.8min
+  Epoch   4/50 | loss=0.7532 | val OA=48.06% AA=47.42% Kappa=44.7% F1=47.28% gates=0.069 | test OA=47.36% | 3.7min
+  Epoch   5/50 | loss=0.6959 | val OA=44.92% AA=44.30% Kappa=41.4% F1=43.66% gates=0.050 | test OA=46.24% | 4.6min
+  Epoch   6/50 | loss=0.6519 | val OA=45.84% AA=45.02% Kappa=42.4% F1=44.50% gates=0.060 | test OA=45.36% | 5.6min
+  Epoch   7/50 | loss=0.5852 | val OA=47.94% AA=47.25% Kappa=44.6% F1=47.14% gates=0.031 | test OA=46.60% | 6.4min
+  Epoch   8/50 | loss=0.5530 | val OA=48.24% AA=47.92% Kappa=45.0% F1=47.01% gates=0.046 | test OA=47.52% | 7.2min
+  Epoch   9/50 | loss=0.5172 | val OA=45.88% AA=44.99% Kappa=42.4% F1=44.61% gates=0.032 | test OA=45.92% | 8.0min
+  Epoch  10/50 | loss=0.4711 | val OA=46.36% AA=45.76% Kappa=42.9% F1=45.97% gates=0.028 | test OA=46.98% | 8.8min
+  Epoch  11/50 | loss=0.4464 | val OA=49.52% AA=49.36% Kappa=46.3% F1=48.51% gates=0.040 | test OA=48.76% | 9.6min
+  Epoch  12/50 | loss=0.4164 | val OA=46.94% AA=46.33% Kappa=43.5% F1=46.28% gates=0.021 | test OA=45.78% | 10.4min
+  Epoch  13/50 | loss=0.3839 | val OA=47.30% AA=47.00% Kappa=43.9% F1=46.28% gates=0.038 | test OA=47.02% | 11.3min
+  Epoch  14/50 | loss=0.3645 | val OA=48.00% AA=47.37% Kappa=44.7% F1=46.65% gates=0.012 | test OA=46.34% | 12.2min
+  Epoch  15/50 | loss=0.3366 | val OA=48.82% AA=48.38% Kappa=45.6% F1=47.92% gates=0.008 | test OA=47.92% | 13.0min
+  Epoch  16/50 | loss=0.3109 | val OA=47.98% AA=47.62% Kappa=44.7% F1=46.38% gates=0.006 | test OA=47.56% | 13.8min
+  Epoch  17/50 | loss=0.2969 | val OA=47.74% AA=47.30% Kappa=44.4% F1=46.73% gates=0.009 | test OA=47.18% | 14.6min
+  Epoch  18/50 | loss=0.2735 | val OA=49.22% AA=48.40% Kappa=46.0% F1=47.31% gates=0.021 | test OA=48.02% | 15.4min
+  Epoch  19/50 | loss=0.2555 | val OA=48.74% AA=48.56% Kappa=45.5% F1=48.20% gates=0.011 | test OA=48.70% | 16.2min
+  Epoch  20/50 | loss=0.2398 | val OA=47.36% AA=46.84% Kappa=44.0% F1=45.94% gates=0.008 | test OA=45.18% | 17.0min
+  Epoch  21/50 | loss=0.2358 | val OA=46.48% AA=46.06% Kappa=43.1% F1=45.82% gates=0.003 | test OA=46.44% | 17.8min
+
+★ 早停触发！最佳 val OA = 49.52%
+
+============================================================
+★ 最终结果 (full mode, best model on test set)
+  OA  = 48.76%
+  AA  = 48.62%
+  Kappa = 45.5%
+  F1  = 48.22%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/full/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/full/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/full/table5_classwise.csv
+  Gate值 → /root/autodl-tmp/so2sat_exp/out/full/gate_value.txt (mean_gate=0.0404)
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/full/confusion_matrix.csv
+
+✅ 训练完成！模式=full，总耗时 17.9 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: full ──
+── 完成时间: Mon Aug  3 08:48:45 CST 2026 ──
+
+── ★ 开始训练: no_stmn ──
+── 开始时间: Mon Aug  3 08:48:45 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: no_stmn
+  消融实验: 去掉STMN，S2+S1 → LN → 2-分支Ada-MBA
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/no_stmn
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 2.95M
+  Epoch   1/50 | loss=1.3907 | val OA=38.84% AA=37.83% Kappa=34.9% F1=37.39% | test OA=39.40% | 0.7min
+  Epoch   2/50 | loss=1.0440 | val OA=44.20% AA=43.47% Kappa=40.6% F1=42.82% | test OA=44.10% | 1.4min
+  Epoch   3/50 | loss=0.8940 | val OA=44.62% AA=43.80% Kappa=41.1% F1=43.49% | test OA=46.36% | 2.1min
+  Epoch   4/50 | loss=0.8004 | val OA=48.26% AA=47.25% Kappa=45.0% F1=46.22% | test OA=50.04% | 2.8min
+  Epoch   5/50 | loss=0.7372 | val OA=48.58% AA=48.07% Kappa=45.3% F1=48.35% | test OA=48.74% | 3.5min
+  Epoch   6/50 | loss=0.6795 | val OA=45.60% AA=45.00% Kappa=42.1% F1=44.12% | test OA=46.22% | 4.2min
+  Epoch   7/50 | loss=0.6386 | val OA=48.88% AA=47.92% Kappa=45.6% F1=47.07% | test OA=48.40% | 4.9min
+  Epoch   8/50 | loss=0.6078 | val OA=49.82% AA=49.34% Kappa=46.6% F1=48.83% | test OA=51.10% | 5.6min
+  Epoch   9/50 | loss=0.5617 | val OA=48.70% AA=48.05% Kappa=45.4% F1=47.23% | test OA=50.40% | 6.4min
+  Epoch  10/50 | loss=0.5296 | val OA=48.62% AA=48.01% Kappa=45.4% F1=47.30% | test OA=47.90% | 7.1min
+  Epoch  11/50 | loss=0.4920 | val OA=47.08% AA=46.33% Kappa=43.7% F1=46.09% | test OA=47.10% | 7.9min
+  Epoch  12/50 | loss=0.4592 | val OA=46.58% AA=46.12% Kappa=43.2% F1=44.96% | test OA=47.66% | 8.7min
+  Epoch  13/50 | loss=0.4309 | val OA=47.96% AA=47.32% Kappa=44.6% F1=47.11% | test OA=50.10% | 9.4min
+  Epoch  14/50 | loss=0.4083 | val OA=48.80% AA=48.21% Kappa=45.5% F1=47.90% | test OA=51.18% | 10.2min
+  Epoch  15/50 | loss=0.3868 | val OA=47.96% AA=47.21% Kappa=44.6% F1=46.73% | test OA=49.40% | 11.0min
+  Epoch  16/50 | loss=0.3539 | val OA=46.72% AA=45.83% Kappa=43.3% F1=44.56% | test OA=47.16% | 11.8min
+  Epoch  17/50 | loss=0.3384 | val OA=47.80% AA=47.07% Kappa=44.5% F1=46.04% | test OA=51.18% | 12.6min
+  Epoch  18/50 | loss=0.3161 | val OA=48.48% AA=47.76% Kappa=45.2% F1=47.21% | test OA=50.84% | 13.4min
+
+★ 早停触发！最佳 val OA = 49.82%
+
+============================================================
+★ 最终结果 (no_stmn mode, best model on test set)
+  OA  = 51.10%
+  AA  = 50.94%
+  Kappa = 48.0%
+  F1  = 50.56%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/no_stmn/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/no_stmn/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/no_stmn/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/no_stmn/confusion_matrix.csv
+
+✅ 训练完成！模式=no_stmn，总耗时 13.5 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: no_stmn ──
+── 完成时间: Mon Aug  3 09:02:36 CST 2026 ──
+
+── ★ 开始训练: no_gate ──
+── 开始时间: Mon Aug  3 09:02:36 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: no_gate
+  消融实验: S2+S1+STMN → LN → 3-分支Ada-MBA(无门控α)
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/no_gate
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 5.34M
+  Epoch   1/50 | loss=1.3992 | val OA=43.36% AA=43.10% Kappa=39.8% F1=41.31% | test OA=42.38% | 0.9min
+  Epoch   2/50 | loss=1.0106 | val OA=47.64% AA=47.07% Kappa=44.3% F1=46.55% | test OA=46.64% | 1.8min
+  Epoch   3/50 | loss=0.8735 | val OA=48.70% AA=48.50% Kappa=45.5% F1=47.88% | test OA=46.48% | 2.7min
+  Epoch   4/50 | loss=0.7830 | val OA=50.94% AA=50.45% Kappa=47.8% F1=49.64% | test OA=49.48% | 3.6min
+  Epoch   5/50 | loss=0.7273 | val OA=49.66% AA=49.13% Kappa=46.5% F1=48.35% | test OA=50.28% | 4.5min
+  Epoch   6/50 | loss=0.6732 | val OA=45.52% AA=45.37% Kappa=42.0% F1=44.48% | test OA=44.32% | 5.4min
+  Epoch   7/50 | loss=0.6294 | val OA=47.50% AA=46.71% Kappa=44.1% F1=45.24% | test OA=47.44% | 6.3min
+  Epoch   8/50 | loss=0.5859 | val OA=48.80% AA=48.07% Kappa=45.5% F1=47.07% | test OA=48.20% | 7.2min
+  Epoch   9/50 | loss=0.5491 | val OA=47.06% AA=46.38% Kappa=43.7% F1=45.67% | test OA=47.88% | 8.1min
+  Epoch  10/50 | loss=0.5140 | val OA=46.08% AA=45.42% Kappa=42.6% F1=43.92% | test OA=47.30% | 9.0min
+  Epoch  11/50 | loss=0.4863 | val OA=48.56% AA=48.01% Kappa=45.3% F1=47.80% | test OA=48.44% | 9.9min
+  Epoch  12/50 | loss=0.4484 | val OA=46.04% AA=45.94% Kappa=42.6% F1=45.16% | test OA=47.00% | 10.8min
+  Epoch  13/50 | loss=0.4210 | val OA=50.08% AA=49.59% Kappa=46.9% F1=49.21% | test OA=50.94% | 11.7min
+  Epoch  14/50 | loss=0.3958 | val OA=49.48% AA=48.85% Kappa=46.3% F1=48.42% | test OA=50.18% | 12.7min
+
+★ 早停触发！最佳 val OA = 50.94%
+
+============================================================
+★ 最终结果 (no_gate mode, best model on test set)
+  OA  = 49.48%
+  AA  = 49.02%
+  Kappa = 46.3%
+  F1  = 48.03%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/no_gate/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/no_gate/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/no_gate/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/no_gate/confusion_matrix.csv
+
+✅ 训练完成！模式=no_gate，总耗时 12.8 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: no_gate ──
+── 完成时间: Mon Aug  3 09:15:47 CST 2026 ──
+
+── ★ 开始训练: no_ada ──
+── 开始时间: Mon Aug  3 09:15:47 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: no_ada
+  消融实验: S2+S1+STMN → LN → 3-分支简单平均
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/no_ada
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 3.76M
+  Epoch   1/50 | loss=1.3322 | val OA=43.76% AA=43.20% Kappa=40.2% F1=42.52% | test OA=44.08% | 0.9min
+  Epoch   2/50 | loss=0.9363 | val OA=46.06% AA=45.58% Kappa=42.6% F1=44.38% | test OA=45.08% | 1.8min
+  Epoch   3/50 | loss=0.7808 | val OA=44.74% AA=45.32% Kappa=41.3% F1=44.76% | test OA=45.56% | 2.6min
+  Epoch   4/50 | loss=0.6923 | val OA=51.16% AA=50.71% Kappa=48.0% F1=50.64% | test OA=49.94% | 3.5min
+  Epoch   5/50 | loss=0.6303 | val OA=49.18% AA=48.99% Kappa=46.0% F1=47.93% | test OA=49.10% | 4.4min
+  Epoch   6/50 | loss=0.5812 | val OA=50.92% AA=50.09% Kappa=47.8% F1=49.24% | test OA=48.68% | 5.3min
+  Epoch   7/50 | loss=0.5278 | val OA=48.78% AA=48.12% Kappa=45.5% F1=47.56% | test OA=48.44% | 6.1min
+  Epoch   8/50 | loss=0.4979 | val OA=49.52% AA=49.24% Kappa=46.3% F1=49.15% | test OA=49.94% | 7.0min
+  Epoch   9/50 | loss=0.4601 | val OA=48.12% AA=47.38% Kappa=44.8% F1=47.21% | test OA=47.46% | 7.9min
+  Epoch  10/50 | loss=0.4155 | val OA=50.12% AA=49.36% Kappa=46.9% F1=48.13% | test OA=49.86% | 8.8min
+  Epoch  11/50 | loss=0.3908 | val OA=47.72% AA=47.07% Kappa=44.4% F1=46.36% | test OA=47.20% | 9.7min
+  Epoch  12/50 | loss=0.3617 | val OA=49.30% AA=48.47% Kappa=46.1% F1=47.75% | test OA=48.08% | 10.6min
+  Epoch  13/50 | loss=0.3223 | val OA=48.48% AA=47.56% Kappa=45.2% F1=46.23% | test OA=47.56% | 11.5min
+  Epoch  14/50 | loss=0.3056 | val OA=47.36% AA=46.78% Kappa=44.0% F1=46.38% | test OA=46.96% | 12.3min
+
+★ 早停触发！最佳 val OA = 51.16%
+
+============================================================
+★ 最终结果 (no_ada mode, best model on test set)
+  OA  = 49.94%
+  AA  = 49.71%
+  Kappa = 46.8%
+  F1  = 49.74%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/no_ada/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/no_ada/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/no_ada/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/no_ada/confusion_matrix.csv
+
+✅ 训练完成！模式=no_ada，总耗时 12.4 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: no_ada ──
+── 完成时间: Mon Aug  3 09:28:39 CST 2026 ──
+
+── ★ 开始训练: s2_only ──
+── 开始时间: Mon Aug  3 09:28:39 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: s2_only
+  对比实验: 只用S2光学数据（单模态baseline）
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/s2_only
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 1.08M
+  Epoch   1/50 | loss=1.5285 | val OA=38.78% AA=38.21% Kappa=34.9% F1=37.32% | test OA=40.00% | 0.5min
+  Epoch   2/50 | loss=1.0624 | val OA=41.68% AA=40.99% Kappa=38.0% F1=40.95% | test OA=42.70% | 0.9min
+  Epoch   3/50 | loss=0.9102 | val OA=44.70% AA=44.29% Kappa=41.2% F1=43.76% | test OA=47.94% | 1.3min
+  Epoch   4/50 | loss=0.8194 | val OA=42.68% AA=41.84% Kappa=39.0% F1=41.69% | test OA=44.26% | 1.8min
+  Epoch   5/50 | loss=0.7496 | val OA=45.28% AA=44.70% Kappa=41.8% F1=44.86% | test OA=47.68% | 2.2min
+  Epoch   6/50 | loss=0.7006 | val OA=44.24% AA=43.52% Kappa=40.7% F1=42.33% | test OA=46.68% | 2.7min
+  Epoch   7/50 | loss=0.6536 | val OA=45.66% AA=44.95% Kappa=42.2% F1=44.99% | test OA=49.40% | 3.1min
+  Epoch   8/50 | loss=0.6218 | val OA=44.90% AA=44.17% Kappa=41.4% F1=44.33% | test OA=47.82% | 3.6min
+  Epoch   9/50 | loss=0.5869 | val OA=43.96% AA=43.19% Kappa=40.4% F1=42.98% | test OA=46.04% | 4.0min
+  Epoch  10/50 | loss=0.5431 | val OA=46.22% AA=45.48% Kappa=42.8% F1=45.70% | test OA=47.36% | 4.5min
+  Epoch  11/50 | loss=0.5289 | val OA=43.78% AA=42.88% Kappa=40.2% F1=42.65% | test OA=46.48% | 4.9min
+  Epoch  12/50 | loss=0.4978 | val OA=46.00% AA=45.26% Kappa=42.5% F1=45.12% | test OA=48.40% | 5.3min
+  Epoch  13/50 | loss=0.4621 | val OA=45.04% AA=44.15% Kappa=41.5% F1=43.46% | test OA=47.76% | 5.8min
+  Epoch  14/50 | loss=0.4335 | val OA=45.06% AA=44.39% Kappa=41.6% F1=43.92% | test OA=47.98% | 6.2min
+  Epoch  15/50 | loss=0.4150 | val OA=45.22% AA=44.33% Kappa=41.7% F1=44.26% | test OA=48.22% | 6.6min
+  Epoch  16/50 | loss=0.4008 | val OA=45.10% AA=44.33% Kappa=41.6% F1=43.61% | test OA=48.40% | 7.1min
+  Epoch  17/50 | loss=0.3605 | val OA=45.28% AA=44.55% Kappa=41.8% F1=44.38% | test OA=47.98% | 7.5min
+  Epoch  18/50 | loss=0.3542 | val OA=44.46% AA=43.54% Kappa=40.9% F1=43.09% | test OA=46.18% | 8.0min
+  Epoch  19/50 | loss=0.3355 | val OA=44.12% AA=43.37% Kappa=40.6% F1=43.00% | test OA=45.54% | 8.4min
+  Epoch  20/50 | loss=0.3137 | val OA=44.70% AA=43.87% Kappa=41.2% F1=43.66% | test OA=47.30% | 8.9min
+
+★ 早停触发！最佳 val OA = 46.22%
+
+============================================================
+★ 最终结果 (s2_only mode, best model on test set)
+  OA  = 47.36%
+  AA  = 46.77%
+  Kappa = 44.0%
+  F1  = 46.53%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/s2_only/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/s2_only/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/s2_only/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/s2_only/confusion_matrix.csv
+
+✅ 训练完成！模式=s2_only，总耗时 8.9 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: s2_only ──
+── 完成时间: Mon Aug  3 09:38:02 CST 2026 ──
+
+── ★ 开始训练: s1_only ──
+── 开始时间: Mon Aug  3 09:38:02 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: s1_only
+  对比实验: 只用S1 SAR数据（单模态baseline）
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/s1_only
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 1.08M
+  Epoch   1/50 | loss=2.2435 | val OA=11.48% AA=11.14% Kappa=5.8% F1=7.35% | test OA=12.76% | 0.4min
+  Epoch   2/50 | loss=2.0310 | val OA=20.98% AA=20.55% Kappa=15.9% F1=17.09% | test OA=22.22% | 0.9min
+  Epoch   3/50 | loss=1.9472 | val OA=24.04% AA=23.39% Kappa=19.1% F1=20.42% | test OA=23.38% | 1.3min
+  Epoch   4/50 | loss=1.8919 | val OA=23.84% AA=23.29% Kappa=19.0% F1=22.01% | test OA=22.66% | 1.8min
+  Epoch   5/50 | loss=1.8573 | val OA=22.08% AA=21.64% Kappa=17.1% F1=19.65% | test OA=23.48% | 2.2min
+  Epoch   6/50 | loss=1.8140 | val OA=22.34% AA=21.76% Kappa=17.3% F1=20.11% | test OA=22.90% | 2.6min
+  Epoch   7/50 | loss=1.7790 | val OA=20.06% AA=19.70% Kappa=15.0% F1=17.93% | test OA=21.32% | 3.1min
+  Epoch   8/50 | loss=1.7522 | val OA=24.10% AA=23.62% Kappa=19.2% F1=23.04% | test OA=22.62% | 3.5min
+  Epoch   9/50 | loss=1.7187 | val OA=23.20% AA=22.63% Kappa=18.3% F1=21.70% | test OA=22.60% | 3.9min
+  Epoch  10/50 | loss=1.6868 | val OA=23.42% AA=23.03% Kappa=18.5% F1=22.42% | test OA=22.36% | 4.4min
+  Epoch  11/50 | loss=1.6608 | val OA=24.38% AA=23.95% Kappa=19.6% F1=24.09% | test OA=21.76% | 4.8min
+  Epoch  12/50 | loss=1.6265 | val OA=25.44% AA=24.90% Kappa=20.7% F1=23.62% | test OA=24.56% | 5.3min
+  Epoch  13/50 | loss=1.5797 | val OA=25.14% AA=24.70% Kappa=20.4% F1=24.29% | test OA=23.66% | 5.7min
+  Epoch  14/50 | loss=1.5528 | val OA=18.78% AA=18.40% Kappa=13.6% F1=15.80% | test OA=19.54% | 6.1min
+  Epoch  15/50 | loss=1.5127 | val OA=21.80% AA=21.48% Kappa=16.8% F1=22.21% | test OA=19.24% | 6.6min
+  Epoch  16/50 | loss=1.4776 | val OA=23.16% AA=22.81% Kappa=18.3% F1=22.50% | test OA=21.14% | 7.0min
+  Epoch  17/50 | loss=1.4362 | val OA=24.24% AA=23.91% Kappa=19.4% F1=24.08% | test OA=23.42% | 7.5min
+  Epoch  18/50 | loss=1.3989 | val OA=22.04% AA=21.59% Kappa=17.1% F1=21.36% | test OA=22.56% | 7.9min
+  Epoch  19/50 | loss=1.3578 | val OA=21.10% AA=20.71% Kappa=16.1% F1=19.88% | test OA=20.92% | 8.3min
+  Epoch  20/50 | loss=1.3157 | val OA=16.08% AA=15.70% Kappa=10.7% F1=12.26% | test OA=17.94% | 8.8min
+  Epoch  21/50 | loss=1.2815 | val OA=22.88% AA=22.46% Kappa=18.0% F1=21.85% | test OA=21.62% | 9.2min
+  Epoch  22/50 | loss=1.2509 | val OA=22.84% AA=22.48% Kappa=18.0% F1=22.28% | test OA=22.32% | 9.6min
+
+★ 早停触发！最佳 val OA = 25.44%
+
+============================================================
+★ 最终结果 (s1_only mode, best model on test set)
+  OA  = 24.56%
+  AA  = 24.05%
+  Kappa = 19.8%
+  F1  = 23.18%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/s1_only/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/s1_only/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/s1_only/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/s1_only/confusion_matrix.csv
+
+✅ 训练完成！模式=s1_only，总耗时 9.7 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: s1_only ──
+── 完成时间: Mon Aug  3 09:48:10 CST 2026 ──
+
+── ★ 开始训练: concat ──
+── 开始时间: Mon Aug  3 09:48:10 CST 2026 ──
+============================================================
+★ So2Sat LCZ42 训练 — 模式: concat
+  对比实验: S2+S1+STMN → LN → 拼接融合（早期融合baseline）
+============================================================
+  项目根目录: /root/autodl-tmp/so2sat_exp
+  数据目录: /root/autodl-tmp/so2sat_exp/data
+  输出目录: /root/autodl-tmp/so2sat_exp/out/concat
+  设备: cuda
+  GPU型号: NVIDIA GeForce RTX 4090 D
+  批量大小: 64
+  类别数: 17
+  训练轮数: 50
+  模型参数: 3.96M
+  Epoch   1/50 | loss=1.3316 | val OA=44.18% AA=43.73% Kappa=40.6% F1=42.14% | test OA=42.62% | 0.9min
+  Epoch   2/50 | loss=0.9390 | val OA=49.12% AA=48.74% Kappa=45.9% F1=48.21% | test OA=47.92% | 1.8min
+  Epoch   3/50 | loss=0.7990 | val OA=46.16% AA=45.70% Kappa=42.7% F1=45.25% | test OA=45.10% | 2.6min
+  Epoch   4/50 | loss=0.7020 | val OA=46.42% AA=46.21% Kappa=43.0% F1=44.71% | test OA=46.10% | 3.5min
+  Epoch   5/50 | loss=0.6538 | val OA=49.04% AA=48.68% Kappa=45.8% F1=47.84% | test OA=48.60% | 4.4min
+  Epoch   6/50 | loss=0.6001 | val OA=43.18% AA=43.15% Kappa=39.6% F1=42.01% | test OA=44.96% | 5.3min
+  Epoch   7/50 | loss=0.5509 | val OA=48.12% AA=47.45% Kappa=44.8% F1=46.94% | test OA=51.72% | 6.2min
+  Epoch   8/50 | loss=0.5246 | val OA=48.60% AA=48.14% Kappa=45.3% F1=47.41% | test OA=49.18% | 7.1min
+  Epoch   9/50 | loss=0.4884 | val OA=47.22% AA=46.61% Kappa=43.8% F1=46.25% | test OA=49.60% | 8.0min
+  Epoch  10/50 | loss=0.4502 | val OA=45.30% AA=44.51% Kappa=41.8% F1=44.27% | test OA=46.72% | 8.8min
+  Epoch  11/50 | loss=0.4294 | val OA=49.58% AA=49.40% Kappa=46.4% F1=48.71% | test OA=49.10% | 9.7min
+  Epoch  12/50 | loss=0.3969 | val OA=49.60% AA=49.67% Kappa=46.4% F1=48.78% | test OA=52.64% | 10.6min
+  Epoch  13/50 | loss=0.3737 | val OA=50.08% AA=50.14% Kappa=46.9% F1=49.72% | test OA=50.20% | 11.5min
+  Epoch  14/50 | loss=0.3573 | val OA=47.24% AA=46.99% Kappa=43.9% F1=45.70% | test OA=48.90% | 12.4min
+  Epoch  15/50 | loss=0.3387 | val OA=48.30% AA=47.74% Kappa=45.0% F1=46.89% | test OA=48.84% | 13.3min
+  Epoch  16/50 | loss=0.2982 | val OA=50.18% AA=49.97% Kappa=47.0% F1=49.16% | test OA=50.48% | 14.2min
+  Epoch  17/50 | loss=0.2884 | val OA=47.56% AA=46.94% Kappa=44.2% F1=46.22% | test OA=46.82% | 15.0min
+  Epoch  18/50 | loss=0.2774 | val OA=48.94% AA=48.32% Kappa=45.7% F1=47.76% | test OA=50.22% | 15.9min
+  Epoch  19/50 | loss=0.2625 | val OA=47.52% AA=47.11% Kappa=44.2% F1=46.44% | test OA=47.90% | 16.8min
+  Epoch  20/50 | loss=0.2464 | val OA=49.94% AA=49.43% Kappa=46.7% F1=49.38% | test OA=52.22% | 17.6min
+  Epoch  21/50 | loss=0.2388 | val OA=46.18% AA=45.63% Kappa=42.7% F1=45.19% | test OA=48.80% | 18.5min
+  Epoch  22/50 | loss=0.2241 | val OA=47.20% AA=46.99% Kappa=43.8% F1=46.04% | test OA=49.76% | 19.4min
+  Epoch  23/50 | loss=0.2173 | val OA=49.18% AA=48.62% Kappa=45.9% F1=48.30% | test OA=50.92% | 20.3min
+  Epoch  24/50 | loss=0.2101 | val OA=47.22% AA=46.35% Kappa=43.8% F1=45.61% | test OA=48.46% | 21.2min
+  Epoch  25/50 | loss=0.2038 | val OA=45.18% AA=45.26% Kappa=41.7% F1=43.42% | test OA=45.04% | 22.0min
+  Epoch  26/50 | loss=0.1746 | val OA=47.48% AA=47.13% Kappa=44.1% F1=46.89% | test OA=47.66% | 22.8min
+
+★ 早停触发！最佳 val OA = 50.18%
+
+============================================================
+★ 最终结果 (concat mode, best model on test set)
+  OA  = 50.48%
+  AA  = 50.39%
+  Kappa = 47.3%
+  F1  = 49.92%
+============================================================
+  训练日志 → /root/autodl-tmp/so2sat_exp/out/concat/train_log.csv
+  主结果 → /root/autodl-tmp/so2sat_exp/out/concat/table2_main.csv
+  逐类OA → /root/autodl-tmp/so2sat_exp/out/concat/table5_classwise.csv
+  混淆矩阵 → /root/autodl-tmp/so2sat_exp/out/concat/confusion_matrix.csv
+
+✅ 训练完成！模式=concat，总耗时 22.9 分钟
+  ⚠️ 下载结果后请关机停计费！
+── ★ 完成: concat ──
+── 完成时间: Mon Aug  3 10:11:26 CST 2026 ──
+
+============================================================
+★ Phase 6 全部7种模式实验完成！
+★ 结束时间: Mon Aug  3 10:11:26 CST 2026
+============================================================
+
+── ★ 结果汇总 ──
+  full: OA=48.76%
+  no_stmn: OA=51.10%
+  no_gate: OA=49.48%
+  no_ada: OA=49.94%
+  s2_only: OA=47.36%
+  s1_only: OA=24.56%
+  concat: OA=50.48%
+
+── ★ Gate值（full模式） ──
+Ada-MBA gate weights (cross-attention pairs):
+0-1 (S2(光谱)↔S1(SAR)): 0.0594
+0-2 (S2(光谱)↔STMN(纹理)): 0.0318
+1-2 (S1(SAR)↔STMN(纹理)): 0.0301
+mean_gate: 0.0404
+interpretation: Ada-MBA cross-attention gate weights for 3-branch fusion
+  α=0: only original features used (cross-attention ignored)
+  α=0.5: equal blend of cross-attention and original features
+  α=1: only cross-attention output used (original features ignored)
+
+★ 结果文件目录: /root/autodl-tmp/so2sat_exp/out/
+⚠️ 下载结果后请关机停计费！
